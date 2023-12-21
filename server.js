@@ -30,6 +30,7 @@ app.use('/api', routes.api);
 app.use('/', routes.home);
 
 // Sync Sequelize models and start the Express app
-sequelize.sync({ force: false }).then(() => {
+// Sync Sequelize models and start the Express app
+sequelize.sync({ force: process.env.NODE_ENV === 'development' }).then(() => {
   app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
 });

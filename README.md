@@ -46,5 +46,3 @@ THEN I am able to view posts and comments but I am prompted to log in again befo
 ## Guide
 ![Alt text](images/14-mvc-homework-demo-01.gif)
 
-## My Outcome
-
